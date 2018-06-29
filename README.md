@@ -11,7 +11,7 @@ data class SamplePayload(
     @field:NotEmpty val someMap: Map<String, @NotEmpty String>)
 ```
 
-The `@NotEmpty` annotation on the value type of the map is not considered.
+The `@NotEmpty` annotation on the **value type** of the map `someMap` is not considered.
 
 See https://beanvalidation.org/2.0/spec/#constraintdeclarationvalidationprocess-containerelementconstraints.
 
