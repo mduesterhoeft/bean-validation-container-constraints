@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.2.41'
+		kotlinVersion = '1.4.21'
 		springBootVersion = '2.0.3.RELEASE'
 	}
 	repositories {
@@ -24,7 +24,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 compileKotlin {
 	kotlinOptions {
-		freeCompilerArgs = ["-Xjsr305=strict"]
+		freeCompilerArgs = ["-Xjsr305=strict", "-Xemit-jvm-type-annotations"]
 		jvmTarget = "1.8"
 	}
 }
